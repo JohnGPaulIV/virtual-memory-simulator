@@ -1,0 +1,30 @@
+# list of integration tests
+#  format: run_test <TAG> <ARGS>
+#    <TAG>      used as the root for all filenames (i.e., "expected/$TAG.txt")
+#    <ARGS>     command-line arguments to test
+
+run_test    D_hello                 ""
+run_test    C_goodbye               "-g"
+run_test    B_fact_5                "-f 5"
+run_test    B_fact_0                "-f 0"
+run_test    B_fact_1                "-f 1"
+run_test    B_fact_10               "-f 10"
+run_test    B_cat                   "-c inputs/B_cat.txt"
+run_test    B_cat_no_filename       "-c"
+run_test    B_cat_file_noexist      "-c inputs/B_noexist.txt"
+run_test    A_triodd                "-t 100"
+run_test    A_triodd_invalid_num    "-t abc"
+run_test    A_uniq_simple           "-u inputs/A_uniq_simple.txt"
+run_test    A_uniq_similar          "-u inputs/A_uniq_similar.txt"
+run_test    A_uniq_nonseq           "-u inputs/A_uniq_nonseq.txt"
+run_test    A_uniq_empty            "-u inputs/A_uniq_empty.txt"
+run_test    A_uniq_no_filename      "-u"
+run_test    A_uniq_file_noexist     "-u inputs/A_noexist.txt"
+run_test    A_invalid_switch        "-z"
+run_test    A_invalid_opt1          "-g 123"
+run_test    A_invalid_opt2          "-t 100 abc"
+run_test    A_invalid_opt3          "-c inputs/B_cat.txt foo12"
+run_test    A_invalid_opt4          "-u inputs/B_cat.txt bar34"
+run_test    A_ordering              "-g -f 5 -c inputs/B_cat.txt -t 20 -u inputs/A_uniq_simple.txt"
+run_test    A_ordering_scrambled    "-t 20 -c inputs/B_cat.txt -f 5 -g -u inputs/A_uniq_simple.txt"
+run_test    A_ordering_multi        "-g -t 100 -f 5 -u inputs/A_uniq_nonseq.txt -c inputs/A_noexist.txt -g -t 20 -u inputs/A_uniq_simple.txt -f 4 -c inputs/B_cat.txt"

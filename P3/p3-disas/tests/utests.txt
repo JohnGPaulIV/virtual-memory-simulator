@@ -1,0 +1,3 @@
+Running suite(s): Default
+20 ff = 13
+100%: Checks: 34, Failures: 0, Errors: 0

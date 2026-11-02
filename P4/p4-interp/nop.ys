@@ -1,0 +1,5 @@
+.pos 0x100 code
+_start:
+	nop
+	nop
+	halt

@@ -1,0 +1,19 @@
+C_simple_hex                   pass
+C_no_output                    pass
+B_help                         pass
+B_simple_full                  pass
+B_multisegment                 pass
+B_stripped                     pass
+B_stack                        pass
+A_invalid_param                pass
+A_invalid_multi_files          pass
+A_invalid_multi_params         pass
+A_help_with_file               pass
+A_missing_filename             pass
+A_nonexistent_file             pass
+A_bad_magic                    pass
+A_short_header                 pass
+A_bad_magic_no_H               pass
+A_short_header_no_H            pass
+No memory leak found.
+No uninitialized value found.

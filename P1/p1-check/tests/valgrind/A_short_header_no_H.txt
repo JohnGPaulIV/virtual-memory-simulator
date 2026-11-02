@@ -1,0 +1,22 @@
+==530666== Memcheck, a memory error detector
+==530666== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==530666== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==530666== Command: ../y86 inputs/bad-short_header.o
+==530666== 
+Failed to read file
+==530666== 
+==530666== HEAP SUMMARY:
+==530666==     in use at exit: 472 bytes in 1 blocks
+==530666==   total heap usage: 3 allocs, 2 frees, 16,856 bytes allocated
+==530666== 
+==530666== LEAK SUMMARY:
+==530666==    definitely lost: 0 bytes in 0 blocks
+==530666==    indirectly lost: 0 bytes in 0 blocks
+==530666==      possibly lost: 0 bytes in 0 blocks
+==530666==    still reachable: 472 bytes in 1 blocks
+==530666==         suppressed: 0 bytes in 0 blocks
+==530666== Reachable blocks (those to which a pointer was found) are not shown.
+==530666== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==530666== 
+==530666== For lists of detected and suppressed errors, rerun with: -s
+==530666== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

@@ -1,0 +1,15 @@
+==1210086== Memcheck, a memory error detector
+==1210086== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==1210086== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==1210086== Command: ../intro -f 0
+==1210086== 
+1
+==1210086== 
+==1210086== HEAP SUMMARY:
+==1210086==     in use at exit: 0 bytes in 0 blocks
+==1210086==   total heap usage: 1 allocs, 1 frees, 8,192 bytes allocated
+==1210086== 
+==1210086== All heap blocks were freed -- no leaks are possible
+==1210086== 
+==1210086== For lists of detected and suppressed errors, rerun with: -s
+==1210086== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

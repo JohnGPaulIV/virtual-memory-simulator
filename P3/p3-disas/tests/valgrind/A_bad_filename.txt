@@ -1,0 +1,15 @@
+==2988825== Memcheck, a memory error detector
+==2988825== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==2988825== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==2988825== Command: ../y86 -d inputs/bad-nonexist.o
+==2988825== 
+Failed to read file
+==2988825== 
+==2988825== HEAP SUMMARY:
+==2988825==     in use at exit: 0 bytes in 0 blocks
+==2988825==   total heap usage: 2 allocs, 2 frees, 8,664 bytes allocated
+==2988825== 
+==2988825== All heap blocks were freed -- no leaks are possible
+==2988825== 
+==2988825== For lists of detected and suppressed errors, rerun with: -s
+==2988825== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

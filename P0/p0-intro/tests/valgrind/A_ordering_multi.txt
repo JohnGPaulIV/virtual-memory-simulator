@@ -1,0 +1,47 @@
+==1210402== Memcheck, a memory error detector
+==1210402== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==1210402== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==1210402== Command: ../intro -g -t 100 -f 5 -u inputs/A_uniq_nonseq.txt -c inputs/A_noexist.txt -g -t 20 -u inputs/A_uniq_simple.txt -f 4 -c inputs/B_cat.txt
+==1210402== 
+Goodbye!
+24
+== HEADING ==
+
+This is some sample text. It is in a longer paragraph so that there are multiple
+lines of output. After this paragraph, there is single blank line before the
+second (and final) paragraph.
+
+This is the final paragraph. There is also a blank line after this sentence.
+
+odd
+2
+triodd
+4
+odd
+tri
+odd
+8
+triodd
+10
+odd
+tri
+odd
+14
+triodd
+16
+odd
+tri
+odd
+20
+aaa
+bbb
+ccc
+==1210402== 
+==1210402== HEAP SUMMARY:
+==1210402==     in use at exit: 0 bytes in 0 blocks
+==1210402==   total heap usage: 5 allocs, 5 frees, 25,520 bytes allocated
+==1210402== 
+==1210402== All heap blocks were freed -- no leaks are possible
+==1210402== 
+==1210402== For lists of detected and suppressed errors, rerun with: -s
+==1210402== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

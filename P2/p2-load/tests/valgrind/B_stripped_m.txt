@@ -1,0 +1,19 @@
+==2746733== Memcheck, a memory error detector
+==2746733== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==2746733== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==2746733== Command: ../y86 -m inputs/stripped.o
+==2746733== 
+Contents of memory from 0100 to 0115:
+  0100  30 f3 0f 00 00 00 20 31  40 13 fd ff ff ff 60 31
+  0110  70 08 01 00 00
+Contents of memory from 0200 to 020b:
+  0200  aa bb cc dd 00 00 00 dd  00 00 00
+==2746733== 
+==2746733== HEAP SUMMARY:
+==2746733==     in use at exit: 0 bytes in 0 blocks
+==2746733==   total heap usage: 4 allocs, 4 frees, 20,952 bytes allocated
+==2746733== 
+==2746733== All heap blocks were freed -- no leaks are possible
+==2746733== 
+==2746733== For lists of detected and suppressed errors, rerun with: -s
+==2746733== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

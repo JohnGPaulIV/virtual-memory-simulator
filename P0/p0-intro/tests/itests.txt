@@ -1,0 +1,27 @@
+D_hello                        pass
+C_goodbye                      pass
+B_fact_5                       pass
+B_fact_0                       pass
+B_fact_1                       pass
+B_fact_10                      pass
+B_cat                          pass
+B_cat_no_filename              pass
+B_cat_file_noexist             pass
+A_triodd                       pass
+A_triodd_invalid_num           pass
+A_uniq_simple                  pass
+A_uniq_similar                 pass
+A_uniq_nonseq                  pass
+A_uniq_empty                   pass
+A_uniq_no_filename             pass
+A_uniq_file_noexist            pass
+A_invalid_switch               pass
+A_invalid_opt1                 pass
+A_invalid_opt2                 pass
+A_invalid_opt3                 pass
+A_invalid_opt4                 pass
+A_ordering                     pass
+A_ordering_scrambled           pass
+A_ordering_multi               pass
+No memory leak found.
+No uninitialized value found.

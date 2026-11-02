@@ -1,0 +1,47 @@
+==1210387== Memcheck, a memory error detector
+==1210387== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==1210387== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==1210387== Command: ../intro -t 20 -c inputs/B_cat.txt -f 5 -g -u inputs/A_uniq_simple.txt
+==1210387== 
+Goodbye!
+120
+== HEADING ==
+
+This is some sample text. It is in a longer paragraph so that there are multiple
+lines of output. After this paragraph, there is single blank line before the
+second (and final) paragraph.
+
+This is the final paragraph. There is also a blank line after this sentence.
+
+odd
+2
+triodd
+4
+odd
+tri
+odd
+8
+triodd
+10
+odd
+tri
+odd
+14
+triodd
+16
+odd
+tri
+odd
+20
+aaa
+bbb
+ccc
+==1210387== 
+==1210387== HEAP SUMMARY:
+==1210387==     in use at exit: 0 bytes in 0 blocks
+==1210387==   total heap usage: 5 allocs, 5 frees, 25,520 bytes allocated
+==1210387== 
+==1210387== All heap blocks were freed -- no leaks are possible
+==1210387== 
+==1210387== For lists of detected and suppressed errors, rerun with: -s
+==1210387== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

@@ -1,0 +1,19 @@
+==2746690== Memcheck, a memory error detector
+==2746690== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==2746690== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==2746690== Command: ../y86 -s inputs/moreflags.o
+==2746690== 
+ Segment   Offset    Size      VirtAddr  Type      Flags
+  00       0x0060    0x0015    0x0100    DATA       W 
+  01       0x0075    0x000b    0x0200    DATA        X
+  02       0x0080    0x0015    0x0300    DATA       WX
+  03       0x0090    0x000b    0x0200    DATA      RWX
+==2746690== 
+==2746690== HEAP SUMMARY:
+==2746690==     in use at exit: 0 bytes in 0 blocks
+==2746690==   total heap usage: 4 allocs, 4 frees, 20,952 bytes allocated
+==2746690== 
+==2746690== All heap blocks were freed -- no leaks are possible
+==2746690== 
+==2746690== For lists of detected and suppressed errors, rerun with: -s
+==2746690== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

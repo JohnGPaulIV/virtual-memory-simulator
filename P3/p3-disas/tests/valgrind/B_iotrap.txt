@@ -1,0 +1,24 @@
+==2987967== Memcheck, a memory error detector
+==2987967== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==2987967== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==2987967== Command: ../y86 -d inputs/iotrap.o
+==2987967== 
+Disassembly of executable contents:
+  0x100:                               | .pos 0x100 code
+  0x100:                               | _start:
+  0x100: c0                            |   iotrap 0
+  0x101: c1                            |   iotrap 1
+  0x102: c2                            |   iotrap 2
+  0x103: c3                            |   iotrap 3
+  0x104: c4                            |   iotrap 4
+  0x105: c5                            |   iotrap 5
+
+==2987967== 
+==2987967== HEAP SUMMARY:
+==2987967==     in use at exit: 0 bytes in 0 blocks
+==2987967==   total heap usage: 4 allocs, 4 frees, 20,952 bytes allocated
+==2987967== 
+==2987967== All heap blocks were freed -- no leaks are possible
+==2987967== 
+==2987967== For lists of detected and suppressed errors, rerun with: -s
+==2987967== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

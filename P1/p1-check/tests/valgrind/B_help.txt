@@ -1,0 +1,18 @@
+==496419== Memcheck, a memory error detector
+==496419== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==496419== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==496419== Command: ../y86 -h
+==496419== 
+Usage: ../y86 <option(s)> mini-elf-file
+ Options are:
+  -h      Display usage
+  -H      Show the Mini-ELF header
+==496419== 
+==496419== HEAP SUMMARY:
+==496419==     in use at exit: 0 bytes in 0 blocks
+==496419==   total heap usage: 1 allocs, 1 frees, 8,192 bytes allocated
+==496419== 
+==496419== All heap blocks were freed -- no leaks are possible
+==496419== 
+==496419== For lists of detected and suppressed errors, rerun with: -s
+==496419== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
